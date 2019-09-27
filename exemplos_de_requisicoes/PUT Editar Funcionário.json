@@ -1,0 +1,8 @@
+Requisição a ser feita = http://localhost:8080/api/funcionarios/2
+
+{
+	"nome": "Fulano de Tal",
+	"valorHora": "70",
+	"qtdHorasTrabalhoDia": "8.5",
+	"email": "fulano@kazale.com"
+}

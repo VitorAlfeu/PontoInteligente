@@ -7,6 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Optional;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.BDDMockito;
@@ -21,6 +22,8 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.web.context.WebApplicationContext;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -37,8 +40,16 @@ import com.kazale.pontointeligente.api.services.LancamentoService;
 @ActiveProfiles("test")
 public class LancamentoControllerTest {
 
-	@Autowired
+//	@Autowired
 	private MockMvc mvc;
+	
+	@Autowired
+	private WebApplicationContext context;
+	
+	@Before
+	public void setUp() {
+		mvc = MockMvcBuilders.webAppContextSetup(context).build();
+	}
 	
 	@MockBean
 	private LancamentoService lancamentoService;

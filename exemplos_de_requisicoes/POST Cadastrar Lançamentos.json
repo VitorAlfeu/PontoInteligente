@@ -1,0 +1,9 @@
+Requisição a ser feita = http://localhost:8080/api/lancamentos
+
+{
+	"data": "2017-07-18 09:00:00",
+	"tipo": "INICIO_TRABALHO",
+	"descricao": "Inicio de trabalho",
+	"localização": "1.23423, 2.12312",
+	"funcionarioId": "2"
+}

@@ -1,0 +1,25 @@
+﻿Requisição a ser feita = http://localhost:8080/api/cadastrar-pj
+
+
+Headers
+Key = Content-Type
+
+Value = application/json
+
+
+
+{
+	
+	"nome": "Marcio C. de Souza",
+
+	"email": "admin@kazale.com",
+
+	"senha": "123456",
+
+	"cpf": "20011631260",
+
+	"razaoSocial": "Kazale IT",
+
+	"cnpj": "11861136000102" 
+
+}

@@ -1,0 +1,20 @@
+Requisição a ser feita = http://localhost:8080/api/cadastrar-pf
+
+
+
+Headers
+Key = Content-Type
+
+Value = application/json
+
+{
+	
+	"nome": "Fulano",
+	"email": "fulano@kazale.com",
+	"senha": "123456",
+	"cpf": "77553275239",
+	"valorHora": "50",
+
+	"cnpj": "11861136000102"
+
+}
