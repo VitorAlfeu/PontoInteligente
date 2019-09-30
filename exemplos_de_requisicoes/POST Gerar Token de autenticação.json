@@ -1,0 +1,9 @@
+Requisição a ser feita = http://localhost:8080/auth
+
+{
+	
+	"email": "fulano@kazale.com",
+	
+	"senha": "123456"
+
+}
