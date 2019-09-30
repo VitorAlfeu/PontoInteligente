@@ -1,0 +1,2 @@
+Utilizar a seguinte url para fazer as requisições na API pelo Swagger:
+http://localhost:8080/swagger-ui.html
